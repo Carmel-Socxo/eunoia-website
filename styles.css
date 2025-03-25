@@ -66,8 +66,61 @@ body {
     background-color: #F3E0EC; 
   }
 
+/*aap*/
 
+.bg-custom {
+  max-width: 1380px;
+  margin: 0 auto;
+  background-color: #F3E0EC;
+}
+.btn-dark1 {
+  background-color: black;
+  color: #fd81d0;
+  padding: 12px 24px; 
+  font-size: 1.2rem; 
+  border-radius: 5px;
+}
+.btn-dark1:hover {
+  background-color: black;
+  color: #fd81d0;
+ 
+  border-radius: 5px;
+}
+.icon-size {
+  width: 55px; 
+  height: auto;
+}
 
+.fs-5 {
+  font-size: 1.2rem; 
+}
+
+h4.fw-bold {
+  font-size: 1.5rem; 
+}
+.font-color{
+  color: #51565D;
+}
+
+/*About*/
+.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #b0b0b0;
+}
+.avatar-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc; 
+  border-radius: 50%;
+}
+.star-icon {
+  width: 80px;  
+  height: auto;
+}
 /*Footer section*/
 
 footer {
@@ -122,10 +175,14 @@ text-align: left;
 }
 
 .btn-dark {
-  background-color: #fd81d0;
-  border-color: #212529;
+  background-color:rgb(209, 133, 210);
+
 }
 
+.btn-dark:hover {
+  background-color:rgb(209, 133, 210);
+
+}
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
