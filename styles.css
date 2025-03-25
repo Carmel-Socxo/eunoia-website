@@ -4,11 +4,11 @@ body {
   }
 
   h1 {
-    font-size: 3.5rem; 
+    font-size: 3.2rem; 
   }
   
   p {
-    font-size: 1.6rem; 
+    font-size: 1.4rem; 
 }
 
   .content-wrapper {
@@ -62,11 +62,10 @@ body {
   }
 
   .hero-content {
-    text-align: center;
     margin-bottom: 50px;
   }
   
-  /* For responsive image */
+
   .hero-image img {
     max-width: 100%;
     height: auto;
@@ -79,11 +78,34 @@ body {
 }
 
 .hero-content button {
-  padding: 12px 30px; /* Default button padding */
+  padding: 12px 30px; 
 }
 
+.learn-btn {
+  background-color: #322B3C;
+  color: #F2BEFC;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
 
-@media (max-width: 768px) {
+.learn-btn:hover {
+  background-color: #F2BEFC; 
+  color: #322B3C;  
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 968px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
   .hero-content h1 {
     font-size: 2rem; /* Smaller font size on smaller screens */
   }
@@ -220,11 +242,6 @@ text-align: left;
 .btn-dark {
   background-color: #fd81d0;
   border-color: #212529;
-}
-
-.learn-btn{
-  background-color:#322B3C;
-  color:  #F2BEFC;
 }
 
 .row {
