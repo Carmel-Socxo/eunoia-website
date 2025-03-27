@@ -216,6 +216,23 @@ position: absolute;
 }
 
 
+.black-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;  
+  height: 135px; 
+  background-color: #322B3C;
+  z-index: 1;
+}
+
+.h-image {
+  position: relative; /* Make sure the image is positioned relative to its container */
+  z-index: 10; /* Higher z-index to place it above the black box */
+}
+
+
+
 @media (max-width: 576px) {
   h1 {
     font-size: 1.8rem;
@@ -255,12 +272,33 @@ position: absolute;
   .success-text{
     font-size:1.1rem;
   }
+
+
 }
 
 @media (max-width: 750px) {
   .benefit-learning {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+  }
+}
+
+@media(max-width:1000px){
+  .black-box {
+    display: none !important;
+      }
+}
+
+@media(max-width:1075px){
+  .black-box h1 {
+    font-size: 2rem; 
+  }
+
+  .black-box p {
+    font-size: 1rem; 
+  }
+  .black-box{
+    height:100px;
   }
 }
 
