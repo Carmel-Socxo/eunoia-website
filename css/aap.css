@@ -4,8 +4,9 @@ body {
   }
   
   h1 {
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
   }
+  
   h2{
     font-size: 3rem;
   }
@@ -13,10 +14,25 @@ body {
     font-size: 1.9rem;
   }
   p {
-    font-size: 15px; 
+    font-size: 15px;
   }
-  .bg-white{
-    background-color: white;
+  
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .col-lg-32{
+    max-width: 32%;
+  }
+  
+  hr {
+    width: 4%;                  
+    height: 3px;                  
+    background-color: #000;       
+    margin-top: 10px;             
+    margin-bottom: 10px;   
+    color: #000;  
+    opacity: 1;     
   }
   .content-wrapper {
     max-width: 1600px;
@@ -68,7 +84,7 @@ body {
   }
   
   .navbar-collapse.show {
-    background-color: #F3E0EC; 
+    background-color: #f3e0ec;
   }
   
   

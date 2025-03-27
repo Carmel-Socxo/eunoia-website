@@ -245,7 +245,25 @@ body {
     height: 30px; 
     border-radius: 50%;
   }
-  
+  .small-box {
+    position: absolute;
+    top: 20px; 
+    right: -300px;  
+    z-index: 10;
+    background: white;
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    transition: all 0.3s ease; 
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: visible; 
+    min-width: 600px;  
+}
   .testimonial-box {
     background: white;
     border-radius: 8px;
@@ -260,7 +278,7 @@ body {
   .testimonial-section::before {
     content: "";
     position: absolute;
-    left: 100px; 
+    left: 30px; 
     top: 50%;
     transform: translateY(-50%);
     width: 40px; 
@@ -275,7 +293,7 @@ body {
   .testimonial-section::after {
     content: "";
     position: absolute;
-    right: 100px; 
+    right: 30px; 
     top: 50%;
     transform: translateY(-50%);
     width: 40px; 
@@ -380,7 +398,7 @@ body {
   .image-container {
     margin-bottom: 80px; 
   }
-  
+
   .stats-box {
     position: relative;
     margin-top: -40px; 
@@ -394,7 +412,49 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+@media (min-width: 768px) {
+    .minbox {
+        left: -3rem !important;
+        transform: none;
+    }
+    .review-box {
+        transform: translateX(1.5rem);
+    }
+}
+
+@media (max-width: 767px) {
+    .pe-md-5, .ps-md-5 {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+    .minbox {
+        left: 0 !important;
+        margin: 1rem !important;
+    }
+}
+
+  .shifted-image {
+    margin-left: auto;
+    display: block;
+    max-width: 95%; 
+}
+
+.minbox {
+    transform: translateX(-50px);
+}
+
+.review-box {
+    transform: translateX(20px);
+}
+
+@media (max-width: 767px) {
+    .pe-md-5, .ps-md-5 {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+}
+
   /*Footer section*/
   
   footer {
@@ -406,7 +466,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
   }
-  
+ 
   .footer-heading {
     font-size: 2rem;
     font-weight: 600;
