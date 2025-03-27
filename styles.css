@@ -7,6 +7,11 @@ h1 {
   font-size: 2.5rem;
 }
 
+h2{
+  font-size: 2rem;
+}
+
+
 p {
   font-size: 1.2rem;
 }
@@ -17,6 +22,16 @@ li {
 }
 .col-lg-32{
   max-width: 32%;
+}
+
+hr {
+  width: 4%;                  
+  height: 3px;                  
+  background-color: #000;       
+  margin-top: 10px;             
+  margin-bottom: 10px;   
+  color: #000;  
+  opacity: 1;     
 }
 .content-wrapper {
   max-width: 1600px;
@@ -88,6 +103,7 @@ li {
 .coursy-content button {
   margin-bottom: 40px;
 }
+
 
 .coursy-content{
  padding: 40px 100px 40px 0px;
@@ -182,6 +198,11 @@ position: absolute;
   height:auto;
 }
 
+.icon-img{
+  width:40px;
+}
+
+
 
 @media (max-width: 576px) {
   h1 {
@@ -200,6 +221,28 @@ position: absolute;
     height: 80px;
     width: 100%;
   }
+  .hero-blog-section {
+    flex-direction: column;
+    padding: 10px !important;
+  }
+  .blog-image{
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:1240px){
+  .heading-text,.des-text,.success-text{
+    margin:5px !important;
+  }
+  .heading-text{
+    font-size:1.3rem;
+  }
+  .des-text{
+    font-size:1.1rem;
+  }
+  .success-text{
+    font-size:1.1rem;
+  }
 }
 
 @media (max-width: 750px) {
@@ -210,6 +253,20 @@ position: absolute;
 }
 
 @media (max-width: 991px) {
+
+  .heading-text,.des-text,.success-text{
+    margin:5px !important;
+  }
+  .heading-text{
+    font-size:1.2rem;
+  }
+  .des-text{
+    font-size:1rem;
+  }
+  .success-text{
+    font-size:1rem;
+  }
+
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -337,6 +394,44 @@ position: absolute;
   margin: 0 0 10px 0 !important;
 }
 
+.success-text,.heading-text,.des-text,.user-image{
+  align-self: center !important;
+}
+
+
+.blog-image{
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.blog-user-image{
+  margin-right:20px;
+}
+
+.hero-blog-section {
+  flex-direction: column;
+  padding: 10px !important;
+}
+
+.blog-article {
+  gap: 0rem !important;
+  padding: 2.5rem !important;
+}
+
+.team-header h1{
+  font-size: 1.5rem;
+}
+
+.team-header p{
+  font-size: 1rem;
+}
+
+.team-header{
+  padding: 18px !important;
+}
+
+
+
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
@@ -355,11 +450,11 @@ position: absolute;
    width: 60%;
     height: 40%;
   }
+
+ 
 }
 
-@media(max-width: 1000px){
 
-}
 
 /*Footer section*/
 
