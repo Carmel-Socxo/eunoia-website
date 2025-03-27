@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   $("#navbarNav").on("shown.bs.collapse", function () {
     $("body").addClass("no-scroll");
   });
