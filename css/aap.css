@@ -86,7 +86,11 @@ body {
   .navbar-collapse.show {
     background-color: #f3e0ec;
   }
-  
+ 
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
   
   /*aap*/
   
@@ -206,6 +210,51 @@ body {
     }
   }
   
+  
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 999;
+      transform: translateY(-100%);
+    }
+  
+    .navbar-collapse.show {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 15px;
+    }
+  
+    .navbar-toggler {
+      position: relative;
+      z-index: 1050;
+    }
+  
+    .navbar-brand img {
+      max-height: 50px;
+      z-index: 1050;
+    }
+
+  
+  
+  }
 /*Footer section*/
 
 footer {

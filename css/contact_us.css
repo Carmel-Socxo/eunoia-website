@@ -18,6 +18,23 @@ body {
   .bg-white{
     background-color: white;
   }
+li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .col-lg-32{
+    max-width: 32%;
+  }
+  
+  hr {
+    width: 4%;                  
+    height: 3px;                  
+    background-color: #000;       
+    margin-top: 10px;             
+    margin-bottom: 10px;   
+    color: #000;  
+    opacity: 1;     
+  }
   .content-wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -68,9 +85,59 @@ body {
   }
   
   .navbar-collapse.show {
-    background-color: #F3E0EC; 
+    background-color: #f3e0ec;
   }
   
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+   
+  
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 999;
+      transform: translateY(-100%);
+    }
+  
+    .navbar-collapse.show {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 15px;
+    }
+  
+    .navbar-toggler {
+      position: relative;
+      z-index: 1050;
+    }
+  
+    .navbar-brand img {
+      max-height: 50px;
+      z-index: 1050;
+    }
+
+  }
+
   /*contact_us*/
 
   .custom-btn {

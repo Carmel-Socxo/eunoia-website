@@ -74,7 +74,56 @@ body {
     background-color: #F3E0EC; 
   }
 
+  .no-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
   
+   
+  
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transform: translateY(-100%);
+  }
+
+  .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 15px;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 1050;
+  }
+
+  .navbar-brand img {
+    max-height: 50px;
+    z-index: 1050;
+  }
+
+}
+  /*About*/
   .btn-dark{
     background-color: #f79bd5;
     color: black;
@@ -245,25 +294,7 @@ body {
     height: 30px; 
     border-radius: 50%;
   }
-  .small-box {
-    position: absolute;
-    top: 20px; 
-    right: -300px;  
-    z-index: 10;
-    background: white;
-    padding: 15px; 
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 200px;
-    transition: all 0.3s ease; 
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
-    overflow: visible; 
-    min-width: 600px;  
-}
+ 
   .testimonial-box {
     background: white;
     border-radius: 8px;
@@ -311,16 +342,48 @@ body {
       display: none;
     }
   }
-  
-  
-@media (max-width: 768px) {
-    .testimonial-section::before,
-    .testimonial-section::after {
-      display: none;
+
+  @media (max-width: 576px) {
+    .small-box {
+        position: absolute !important; 
+        width: 35%; 
+        left: 5%; 
+        transform: none; 
+        background: white;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 10; 
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     }
-  }
-  
-  
+
+    .small-box.top {
+        top: 12%; 
+    }
+
+    .small-box.bottom {
+        bottom: 8%; 
+    }
+
+    .minbox {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .image-container {
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        overflow: visible !important; 
+    }
+}
+
+
+
   
   @media (max-width: 767px) { 
     .custom-img {
