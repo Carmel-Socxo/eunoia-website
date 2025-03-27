@@ -3,65 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eunoia Website</title>
+    <title>Eunoia Website About</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    href="./css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="./images/eunoia-fev.png" type="image/png" />
+    <script src="./script/jquery.min.js"></script>
+    
+    <script src="index.js"></script>
   </head>
 
   <body>
-    <div class="content-wrapper">
-      <div class="content-container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./images/eunoia_lgo.svg" alt="Logo"
-            /></a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Eunoia App</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Knowledge</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+        <div class="content-wrapper bg-pink">
+          <div class="content-container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="images/eunoia_lgo.svg" alt="Logo"
+                /></a>
+  
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  id="navbarTogglerButton"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Eunoia App</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Knowledge</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
-        </nav>
-      </div>
-    </div>
+        </div>
+      </header>
+  
 
 <!--All sections-->
-
-      <div class="container-fluid bg-custom py-5">
-        <div class="container">
+<div class="content-wrapper content-boder bg-pink">
+    <div class="content-container">
           <div class="row align-items-center">
             <div class="col-12 col-md-6 mb-4 mb-md-0">
               <h2 class="fw-bold">A supportive professional to guide you.</h2><br>
@@ -85,7 +90,7 @@
               </ul>
               <div class="d-flex justify-content-center gap-3 btn-container">
                 <a href="#" class="btn btn-dark1 btn-lg px-4 py-2 mt-3">Discover More</a>
-                <a href="#" class="btn btn-dark1 btn-lg px-4 py-2 mt-3">Contact Us</a>
+                <a href="#" class="btn btn-dark btn-lg px-4 py-2 mt-3">Contact Us</a>
               </div>
             </div>
             <div class="col-12 col-md-6 position-relative image-container">
@@ -132,8 +137,11 @@
           </div>
         </div>
       </div>
-
+      
+    </div>
+</div>
   
+<!--About Eunoia-->
   <div class="container py-3 py-md-5"> 
     <div class="row">
       <div class="col-12 text-center mb-4 mb-md-5">
@@ -192,48 +200,48 @@
                     </div>
                 </div>
 
-                <div class="row g-4">
-              
+                <div class="row g-3"> 
                     <div class="col-12 col-md-6">
-                        <div class="h-100 p-4 bg-white rounded-3 shadow-sm text-center">
-                            <div class="step-number mb-3">01</div>
-                            <h5 class="fw-bold text-dark mb-3">Request on the site</h5>
-                            <p class="text-muted txfont">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <div class="h-100 p-3 bg-white rounded-3 shadow-sm">
+                            <div class="step-number fw-bold text-dark text-start w-100 mb-2">01</div>
+                            <h5 class="fw-bold text-dark mb-2">Request on the site</h5>
+                            <p class="text-muted txfont mt-2">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
                             </p>
                         </div>
                     </div>
-
+                
                     <div class="col-12 col-md-6">
-                        <div class="h-100 p-4 bg-white rounded-3 shadow-sm text-center">
-                            <div class="step-number mb-3">02</div>
-                            <h5 class="fw-bold text-dark mb-3">Timing</h5>
-                            <p class="text-muted txfont">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <div class="h-100 p-3 bg-white rounded-3 shadow-sm">
+                            <div class="step-number fw-bold text-dark text-start  w-100  mb-2">02</div>
+                            <h5 class="fw-bold text-dark mb-2">Timing</h5>
+                            <p class="text-muted txfont mt-2">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
                             </p>
                         </div>
                     </div>
-
+                
                     <div class="col-12 col-md-6">
-                        <div class="h-100 p-4 bg-white rounded-3 shadow-sm text-center">
-                            <div class="step-number mb-3">03</div>
-                            <h5 class="fw-bold text-dark mb-3">Conducting a session</h5>
-                            <p class="text-muted txfont">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <div class="h-100 p-3 bg-white rounded-3 shadow-sm">
+                            <div class="step-number fw-bold text-dark text-start  w-100 mb-2">03</div>
+                            <h5 class="fw-bold text-dark mb-2">Conducting a session</h5>
+                            <p class="text-muted txfont mt-2">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
                             </p>
                         </div>
                     </div>
-
+                
                     <div class="col-12 col-md-6">
-                        <div class="h-100 p-4 bg-white rounded-3 shadow-sm text-center">
-                            <div class="step-number mb-3">04</div>
-                            <h5 class="fw-bold text-dark mb-3">Satisfied review</h5>
-                            <p class="text-muted txfont" >
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <div class="h-100 p-3 bg-white rounded-3 shadow-sm">
+                            <div class="step-number fw-bold text-dark text-start  w-100 mb-2">04</div>
+                            <h5 class="fw-bold text-dark mb-2">Satisfied review</h5>
+                            <p class="text-muted txfont mt-2">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
                             </p>
                         </div>
                     </div>
                 </div>
+                
             </div>
 
             <div class="col-12 col-lg-6">
@@ -428,7 +436,8 @@
     </div>
   </footer>
   
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <script src="./script/bootstrap.js"></script>
     </body>
   </html>
   
